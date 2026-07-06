@@ -88,14 +88,14 @@
             wikframe.src = wik;
             document.body.insertBefore(wikframe, document.body.firstChild);
             addEvent(window, "load", function() {
-                setTimeout(function() {
-                    while (document.body.firstChild != wikframe) {
-                        document.body.removeChild(document.body.firstChild);
-                    }
-                    while (document.body.lastChild != wikframe) {
-                        document.body.removeChild(document.body.lastChild);
-                    }
-                }, 0);
+//                setTimeout(function() {
+//                    while (document.body.firstChild != wikframe) {
+//                        document.body.removeChild(document.body.firstChild);
+//                    }
+//                    while (document.body.lastChild != wikframe) {
+//                        document.body.removeChild(document.body.lastChild);
+//                    }
+//                }, 0);
             });
             addEvent(window, "resize", function() {
                 wikframe.style.height = (function() {
