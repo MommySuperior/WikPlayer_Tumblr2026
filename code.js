@@ -86,7 +86,7 @@
             wikframe.id = "wikframe";
             wikframe.allowTransparency = true;
             wikframe.src = wik;
-            document.body.insertBefore(wikframe, document.body.firstChild);
+            document.body.appendChild(wikframe);
             addEvent(window, "load", function() {
 //                setTimeout(function() {
 //                    while (document.body.firstChild != wikframe) {
